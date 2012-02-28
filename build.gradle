@@ -1,0 +1,18 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  groovy 'org.codehaus.groovy:groovy:1.8.6'
+  testCompile 'junit:junit:4.10'
+  testCompile 'org.gmock:gmock:0.8.2'
+  compile 'org.eclipse.jetty:jetty-server:8.1.0.v20120127'
+  compile 'org.eclipse.jetty:jetty-webapp:8.1.0.v20120127'
+  compile 'org.eclipse.jetty:jetty-servlet:8.1.0.v20120127'
+  compile files('lib/Groomple-1.0.jar')
+}
+
+version = 0.1
